@@ -1,0 +1,75 @@
+//output: index.html
+html
+	head
+		title Title goes here
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		meta(name="author", content="Steven To")
+		meta(name="description", content="A small and beautifully made website.")
+		
+		// Stylesheet
+		link(rel="stylesheet", type="text/css", href="includes/css/main.css")
+
+		// Font Awesome
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+
+		// Lato Font
+		link(href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css')
+
+	body
+
+		header#main-header
+			nav#navbar
+				a(href="index.html").logo
+					img(src="includes/img/logo.png", alt="logo")
+				ul
+					li
+						a(href="#") Accueli <span>/</span>
+					li
+						a(href="#") Portfolio <span>/</span>
+					li
+						a(href="#") About <span>/</span>
+					li
+						a(href="#") Contact
+			.header-intro
+				.inner-container
+					h1 VOICI VOTRE PROCHAIN PORTFOLIO
+					h2 UN TEMPLATE PSD SIMPLE ET GRATUIT
+					a(href="#") MES TRAVAUX
+
+		section#works
+			ul.works-nav
+				li
+					a(href="#") Tous les projets
+				li
+					a(href="#") Web Design
+				li
+					a(href="#") UI/UX Design
+				li
+					a(href="#") Illustration
+				li
+					a(href="#") Motion Design
+			.showcase
+				.column.column-1
+					.thumb.illustration
+						img(src="includes/img/item1.jpg", alt="illustration")
+						span Illustration
+					.thumb.app
+						img(src="includes/img/item2.jpg", alt="app")
+						span Mobile App
+				.column.column-2
+					.thumb.logo
+						img(src="includes/img/item3.jpg", alt="logo")
+						span Logo Designs
+					.thumb.motion
+						img(src="includes/img/item4.jpg", alt="motion")
+						span Motion Graphics
+
+		.scroller
+
+		// jQuery Google CDN
+		script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+		
+		// Script
+		script(type="text/javascript", src="includes/js/minjs/script.js")
+
