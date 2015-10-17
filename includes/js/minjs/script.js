@@ -1,0 +1,1 @@
+$(document).ready(function(){$(window).scroll(function(i){var n=$(this).scrollTop();$("#main-header").css({"background-position":"0px "+n/5+"px"})});var i=$(".thumb");i.hover(function(){$(this).children("span").css({visibility:"visible","background-color":"rgba(78,183,89,0.5)"})},function(){$(this).children("span").css({visibility:"hidden",background:"none"})})});
