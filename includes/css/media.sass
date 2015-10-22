@@ -1,0 +1,134 @@
+// From tablet to small screen equipped desktops
+@media screen and (max-width: 920px)
+	// =======================================
+	// Responsive Header
+	// =======================================
+	#main-header
+		height: 400px
+		#navbar
+			display: block
+			width: 90%
+			.hamburger
+				display: block
+				float: right
+				i
+					line-height: 68px
+					font-size: 2.2rem
+					color: #fff
+			ul#main-menu
+				position: fixed
+				top: 0
+				right: -182px
+				float: none
+				width: 180px
+				height: 100%
+				background-color: #282828
+				z-index: 10
+				box-shadow: -2px 0 2px rgba(0, 0, 0, 0.5)
+				li
+					display: block
+					a
+						text-decoration: none
+						color: #fff
+						padding: 22px 180px 22px 10px
+						margin: 15px 0
+						font-size: 2rem
+						font-weight: 400
+						&:hover
+							background-color: rgba(0, 0, 0, 0.3)
+					span
+						display: none
+				li.close-button
+					display: block
+					a
+						padding: 22px 25px 22px 140px
+						i
+							font-size: 2rem
+
+		.header-intro
+			width: 100%
+			display: flex
+			justify-content: center
+			text-align: center
+			margin-top: 120px
+			color: #fff
+			.inner-container
+				h1
+					display: block
+					font-size: 3rem
+					word-spacing: 0.8rem
+				h2
+					display: block
+					font-size: 2rem
+					font-weight: 300
+					line-height: 5rem
+					padding-bottom: 15px
+					color: #ccc
+				a
+					display: inline-block
+					text-decoration: none
+					color: #45BC71
+					font-size: 1.4rem
+					padding: 8px 15px
+					border: 2px solid #45BC71
+					border-radius: 3px
+					transition: all 0.2s ease-in-out
+					&:hover
+						color: #fff
+						background-color: #45BC71
+
+	// =======================================
+	// Responsive Portfolio
+	// =======================================
+	#works
+		.works-container
+			width: 95%
+			margin: 0 auto
+			.works-nav
+				margin: 0 0 0 15%
+				text-align: left
+				box-sizing: content-box
+				li
+					display: block
+					margin-top: 10px
+					padding: 5px
+					a
+						width: inherit
+						text-decoration: none
+						text-align: right
+						line-height: 20px
+						padding: 15px 25% 15px 10px
+						color: #4A555F
+						background: none
+						font-size: 1.6rem
+						font-weight: 700
+						border-radius: 3px
+						transition: all 150ms ease-in-out
+						&:hover
+							color: #fff
+							background-color: #49BF73
+			#showcase
+				width: 70%
+				margin: 25px auto
+				padding: 0 0 70px 0
+				.column-1
+					width: 100%
+					margin-right: 0
+					margin-bottom: 20px
+					display: block
+					float: none
+					.illustration
+						margin-bottom: 5%
+					.app
+						display: none
+				.column-2
+					width: 100%
+					display: inline-block
+					.logo
+						margin-bottom: 20px
+
+// From big mobile phones to tablet
+@media screen and (max-width: 550px)
+
+// Small mobile phones
+@media screen and (max-width: 320px)

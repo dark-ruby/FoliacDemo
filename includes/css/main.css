@@ -9,9 +9,10 @@
   height: 472px;
   overflow: hidden;
   background-image: url("../img/header-image-computer.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
   #main-header #navbar {
+    display: block;
     width: 80%;
     margin: 0px auto;
     padding: 15px; }
@@ -19,32 +20,36 @@
       float: left; }
       #main-header #navbar .logo img {
         width: 120px; }
-    #main-header #navbar ul {
+    #main-header #navbar .hamburger {
+      display: none; }
+    #main-header #navbar ul#main-menu {
       list-style-type: none;
       float: right; }
-      #main-header #navbar ul li {
+      #main-header #navbar ul#main-menu li {
         display: inline-block; }
-        #main-header #navbar ul li a {
+        #main-header #navbar ul#main-menu li a {
           text-decoration: none;
           color: white;
           line-height: 68px;
           padding: 20px 0;
           font-size: 1.8rem;
           font-weight: 400;
-          transition: all 0.2s ease-in-out; }
-          #main-header #navbar ul li a:hover {
+          transition: all 150ms ease-in-out; }
+          #main-header #navbar ul#main-menu li a:hover {
             color: #ccc; }
-        #main-header #navbar ul li span {
+        #main-header #navbar ul#main-menu li span {
           padding: 0px 36px;
           color: #636E78;
           font-size: 1.8rem; }
+      #main-header #navbar ul#main-menu li.close-button {
+        display: none; }
   #main-header .header-intro {
     width: 100%;
     display: flex;
     justify-content: center;
     color: #fff;
     text-align: center;
-    margin-top: 12%; }
+    margin-top: 150px; }
     #main-header .header-intro .inner-container h1 {
       display: block;
       font-size: 3.4rem;
@@ -57,6 +62,7 @@
       padding-bottom: 15px;
       color: #ccc; }
     #main-header .header-intro .inner-container a {
+      display: inline-block;
       text-decoration: none;
       color: #45BC71;
       font-size: 1.4rem;
@@ -71,39 +77,39 @@
 #works {
   width: 100%;
   background-color: #F9F9F9; }
-  #works .works-nav {
+  #works .works-container .works-nav {
     list-style-type: none;
     margin: 0 auto;
-    padding: 25px 0;
+    padding: 25px;
     text-align: center; }
-    #works .works-nav li {
+    #works .works-container .works-nav li {
       display: inline-block; }
-      #works .works-nav li a {
+      #works .works-container .works-nav li a {
         text-decoration: none;
         padding: 5px 10px;
+        margin: 10px;
         color: #4A555F;
         background-color: #EAEAEA;
-        margin: 0 10px;
         font-size: 1.6rem;
         font-weight: 700;
         border-radius: 3px;
         transition: all 150ms ease-in-out; }
-        #works .works-nav li a:hover {
-          color: white;
+        #works .works-container .works-nav li a:hover {
+          color: #fff;
           background-color: #49BF73; }
-  #works .showcase {
+  #works .works-container #showcase {
     width: 70%;
     margin: 25px auto;
     padding: 0 0 70px 0; }
-    #works .showcase .column .thumb {
+    #works .works-container #showcase .column .thumb {
       border-radius: 10px;
       overflow: hidden;
       display: block;
       position: relative;
       cursor: pointer; }
-      #works .showcase .column .thumb img {
+      #works .works-container #showcase .column .thumb img {
         width: 100%; }
-      #works .showcase .column .thumb span {
+      #works .works-container #showcase .column .thumb span {
         display: flex;
         visibility: hidden;
         width: 100%;
@@ -114,21 +120,23 @@
         bottom: 0;
         align-items: center;
         justify-content: center;
-        color: white;
+        color: #fff;
         font-size: 2.2rem;
         transition: all 0.1s ease-in-out; }
-    #works .showcase .column-1 {
+    #works .works-container #showcase .column-1 {
       width: 38%;
       margin-right: 2%;
       display: inline-block;
       float: left; }
-      #works .showcase .column-1 .illustration {
+      #works .works-container #showcase .column-1 .illustration {
         margin-bottom: 5%; }
-    #works .showcase .column-2 {
+    #works .works-container #showcase .column-2 {
       width: 60%;
       display: inline-block; }
-      #works .showcase .column-2 .logo {
+      #works .works-container #showcase .column-2 .logo {
         margin-bottom: 3%; }
 
 .scroller {
   height: 1000px; }
+
+

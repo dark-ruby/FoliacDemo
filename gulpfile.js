@@ -14,8 +14,9 @@ gulp.task('jadify', function(){
 });
 // Sass
 gulp.task('sass', function(){
-	sass('includes/css/main.sass')
-	.pipe(gulp.dest('includes/css/'));
+	sass('includes/css/*.sass', {sourcemap: true})
+	.pipe(gulp.dest('includes/css/'))
+	.pipe(browserSync.stream());
 });
 // Uglify scripting files.
 gulp.task('uglifyScripts', function(){
@@ -30,18 +31,18 @@ gulp.task('serve', ['sass'], function(){
 	browserSync.init({
 		server: "."
 	});
-	gulp.watch("includes/css/main.css").on('change', browserSync.reload);
+
+	// Compile Jade, SASS and uglify jQuery scripts.
+	gulp.watch('index.jade', ['jadify']);
+	gulp.watch('includes/css/*.sass', ['sass']);
+	gulp.watch('includes/js/script.js', ['uglifyScripts']);
+
+	// Reload pages on files' changes.
+	gulp.watch("includes/css/*.css").on('change', browserSync.reload);
 	gulp.watch("index.html").on('change', browserSync.reload);
 	gulp.watch("includes/js/minjs/script.js").on('change', browserSync.reload);
 });
 
-// Gulp Watch
-gulp.task('watch', function(){
-	gulp.watch('index.jade', ['jadify']);
-	gulp.watch('includes/css/main.sass', ['sass']);
-	gulp.watch('includes/js/script.js', ['uglifyScripts']);
-});
-
-gulp.task('default', ['watch', 'serve']);
+gulp.task('default', ['serve']);
 
 

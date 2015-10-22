@@ -9,15 +9,18 @@
     <meta name="description" content="A small and beautifully made website."/>
     <!-- Stylesheet-->
     <link rel="stylesheet" type="text/css" href="includes/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="includes/css/media.css"/>
     <!-- Font Awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
     <!-- Lato Font-->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css"/>
   </head>
   <body>
+    <!-- Main Header ---------------------------------------------->
     <header id="main-header">
-      <nav id="navbar"><a href="index.html" class="logo"><img src="includes/img/logo.png" alt="logo"/></a>
-        <ul>
+      <nav id="navbar"><a href="index.html" class="logo"><img src="includes/img/logo.png" alt="logo"/></a><a href="#" class="hamburger"><i class="fa fa-bars"></i></a>
+        <ul id="main-menu">
+          <li class="close-button"><a href="#"><i class="fa fa-close"></i></a></li>
           <li><a href="#">Accueli <span>/</span></a></li>
           <li><a href="#">Portfolio <span>/</span></a></li>
           <li><a href="#">About <span>/</span></a></li>
@@ -31,25 +34,30 @@
         </div>
       </div>
     </header>
+    <!-- Portfolio -------------------------------------------------->
     <section id="works">
-      <ul class="works-nav">
-        <li><a href="#">Tous les projets</a></li>
-        <li><a href="#">Web Design</a></li>
-        <li><a href="#">UI/UX Design</a></li>
-        <li><a href="#">Illustration</a></li>
-        <li><a href="#">Motion Design</a></li>
-      </ul>
-      <div class="showcase">
-        <div class="column column-1">
-          <div class="thumb illustration"><img src="includes/img/item1.jpg" alt="illustration"/><span>Illustration</span></div>
-          <div class="thumb app"><img src="includes/img/item2.jpg" alt="app"/><span>Mobile App</span></div>
-        </div>
-        <div class="column column-2">
-          <div class="thumb logo"><img src="includes/img/item3.jpg" alt="logo"/><span>Logo Designs</span></div>
-          <div class="thumb motion"><img src="includes/img/item4.jpg" alt="motion"/><span>Motion Graphics</span></div>
+      <div class="works-container">
+        <ul class="works-nav">
+          <li><a href="#">Tous les projets</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">UI/UX Design</a></li>
+          <li><a href="#">Illustration</a></li>
+          <li><a href="#">Motion Design</a></li>
+        </ul>
+        <!-- Works Showcase --------------------------------------------->
+        <div id="showcase">
+          <div class="column column-1">
+            <div class="thumb illustration"><img src="includes/img/item1.jpg" alt="illustration"/><span>Illustration</span></div>
+            <div class="thumb app"><img src="includes/img/item2.jpg" alt="app"/><span>Mobile App</span></div>
+          </div>
+          <div class="column column-2">
+            <div class="thumb logo"><img src="includes/img/item3.jpg" alt="logo"/><span>Logo Designs</span></div>
+            <div class="thumb motion"><img src="includes/img/item4.jpg" alt="motion"/><span>Motion Graphics</span></div>
+          </div>
         </div>
       </div>
     </section>
+    <div style="clear:both;"></div>
     <div class="scroller"></div>
     <!-- jQuery Google CDN-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

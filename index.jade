@@ -9,6 +9,7 @@ html
 		
 		// Stylesheet
 		link(rel="stylesheet", type="text/css", href="includes/css/main.css")
+		link(rel="stylesheet", type="text/css", href="includes/css/media.css")
 
 		// Font Awesome
 		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
@@ -18,11 +19,17 @@ html
 
 	body
 
+		// Main Header --------------------------------------------
 		header#main-header
 			nav#navbar
 				a(href="index.html").logo
 					img(src="includes/img/logo.png", alt="logo")
-				ul
+				a(href="#").hamburger
+					i.fa.fa-bars
+				ul#main-menu
+					li.close-button
+						a(href="#")
+							i.fa.fa-close
 					li
 						a(href="#") Accueli <span>/</span>
 					li
@@ -31,40 +38,46 @@ html
 						a(href="#") About <span>/</span>
 					li
 						a(href="#") Contact
+				
+
 			.header-intro
 				.inner-container
 					h1 VOICI VOTRE PROCHAIN PORTFOLIO
 					h2 UN TEMPLATE PSD SIMPLE ET GRATUIT
 					a(href="#") MES TRAVAUX
 
+		// Portfolio ------------------------------------------------
 		section#works
-			ul.works-nav
-				li
-					a(href="#") Tous les projets
-				li
-					a(href="#") Web Design
-				li
-					a(href="#") UI/UX Design
-				li
-					a(href="#") Illustration
-				li
-					a(href="#") Motion Design
-			.showcase
-				.column.column-1
-					.thumb.illustration
-						img(src="includes/img/item1.jpg", alt="illustration")
-						span Illustration
-					.thumb.app
-						img(src="includes/img/item2.jpg", alt="app")
-						span Mobile App
-				.column.column-2
-					.thumb.logo
-						img(src="includes/img/item3.jpg", alt="logo")
-						span Logo Designs
-					.thumb.motion
-						img(src="includes/img/item4.jpg", alt="motion")
-						span Motion Graphics
+			.works-container
+				ul.works-nav
+					li
+						a(href="#") Tous les projets
+					li
+						a(href="#") Web Design
+					li
+						a(href="#") UI/UX Design
+					li
+						a(href="#") Illustration
+					li
+						a(href="#") Motion Design
 
+				// Works Showcase -------------------------------------------
+				#showcase
+					.column.column-1
+						.thumb.illustration
+							img(src="includes/img/item1.jpg", alt="illustration")
+							span Illustration
+						.thumb.app
+							img(src="includes/img/item2.jpg", alt="app")
+							span Mobile App
+					.column.column-2
+						.thumb.logo
+							img(src="includes/img/item3.jpg", alt="logo")
+							span Logo Designs
+						.thumb.motion
+							img(src="includes/img/item4.jpg", alt="motion")
+							span Motion Graphics
+		div(style='clear:both;')
 		.scroller
 
 		// jQuery Google CDN
@@ -72,4 +85,3 @@ html
 		
 		// Script
 		script(type="text/javascript", src="includes/js/minjs/script.js")
-

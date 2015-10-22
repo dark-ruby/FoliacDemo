@@ -3,9 +3,10 @@
 	overflow: hidden
 	background:
 		image: url('../img/header-image-computer.jpg')
-		size: cover
 		repeat: no-repeat
+		size: cover
 	#navbar
+		display: block
 		width: 80%
 		margin: 0px auto
 		padding: 15px
@@ -13,7 +14,9 @@
 			float: left
 			img
 				width: 120px
-		ul
+		.hamburger
+			display: none
+		ul#main-menu
 			list-style-type: none
 			float: right
 			li
@@ -25,13 +28,15 @@
 					padding: 20px 0
 					font-size: 1.8rem
 					font-weight: 400
-					transition: all 0.2s ease-in-out
+					transition: all 150ms ease-in-out
 					&:hover
 						color: #ccc
 				span
 					padding: 0px 36px
 					color: #636E78
 					font-size: 1.8rem
+			li.close-button
+				display: none
 
 	.header-intro
 		width: 100%
@@ -39,7 +44,7 @@
 		justify-content: center
 		color: #fff
 		text-align: center
-		margin-top: 12%
+		margin-top: 150px
 		.inner-container
 			h1
 				display: block
@@ -53,6 +58,7 @@
 				padding-bottom: 15px
 				color: #ccc
 			a
+				display: inline-block
 				text-decoration: none
 				color: #45BC71
 				font-size: 1.4rem
