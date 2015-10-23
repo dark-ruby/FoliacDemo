@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -136,7 +137,228 @@
       #works .works-container #showcase .column-2 .logo {
         margin-bottom: 3%; }
 
-.scroller {
-  height: 1000px; }
+#about {
+  height: 350px;
+  margin-top: -40px;
+  background-image: url("../img/men-computer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  #about .introduction {
+    width: 60%;
+    float: right;
+    color: #fff;
+    padding-left: 22%; }
+    #about .introduction .intro-container {
+      margin-top: 8%;
+      padding-right: 15%; }
+      #about .introduction .intro-container h1 {
+        font-size: 2.6rem;
+        font-weight: 400;
+        line-height: 4rem; }
+      #about .introduction .intro-container h4 {
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 40px; }
+      #about .introduction .intro-container p {
+        font-size: 1.4rem; }
+      #about .introduction .intro-container a {
+        line-height: 80px;
+        padding: 10px 14px;
+        text-decoration: none;
+        color: #3C4A57;
+        font-size: 1.6rem;
+        font-weight: 700;
+        border: 2px solid #3C4A57;
+        border-radius: 3px;
+        transition: all 0.2s ease-in-out; }
+        #about .introduction .intro-container a:hover {
+          color: #fff;
+          background-color: #3C4A57; }
+
+#contact {
+  width: 100%;
+  padding: 40px 0; }
+  #contact .contact-container {
+    margin: 0 auto;
+    text-align: center; }
+    #contact .contact-container h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #48BE72;
+      margin: 0 0 40px 0; }
+    #contact .contact-container #contact-form {
+      text-align: center;
+      margin: 0 auto;
+      width: 50%; }
+      #contact .contact-container #contact-form .contact-info {
+        margin: 0;
+        width: 100%; }
+        #contact .contact-container #contact-form .contact-info .clear {
+          clear: both; }
+        #contact .contact-container #contact-form .contact-info .name-wrap {
+          float: left;
+          width: 48%; }
+        #contact .contact-container #contact-form .contact-info .email-wrap {
+          float: right;
+          width: 48%; }
+        #contact .contact-container #contact-form .contact-info input[type="text"], #contact .contact-container #contact-form .contact-info input[type="email"] {
+          width: 100%;
+          height: 40px;
+          border: 2px solid #3D4955;
+          border-radius: 3px;
+          color: #278348;
+          background-color: #F1F1F1;
+          font-size: 1.8rem;
+          padding-left: 50px;
+          line-height: 40px;
+          position: relative; }
+        #contact .contact-container #contact-form .contact-info .name {
+          position: relative; }
+          #contact .contact-container #contact-form .contact-info .name .user-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 40px;
+            background-color: #3D4955;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px; }
+            #contact .contact-container #contact-form .contact-info .name .user-icon:before {
+              content: "";
+              font-family: "FontAwesome";
+              font-style: normal;
+              font-size: 1.6rem;
+              color: #fff;
+              position: relative;
+              top: 25%; }
+            #contact .contact-container #contact-form .contact-info .name .user-icon:after {
+              content: "";
+              width: 0;
+              height: 0;
+              border-top: 20px solid transparent;
+              border-left: 20px solid #3D4955;
+              border-bottom: 20px solid transparent;
+              position: absolute;
+              top: 25%;
+              transform: translateY(-25%); }
+        #contact .contact-container #contact-form .contact-info .email {
+          position: relative; }
+          #contact .contact-container #contact-form .contact-info .email .email-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 40px;
+            background-color: #3D4955;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px; }
+            #contact .contact-container #contact-form .contact-info .email .email-icon:before {
+              content: "";
+              font-family: "FontAwesome";
+              font-style: normal;
+              font-size: 1.6rem;
+              color: #fff;
+              position: relative;
+              top: 25%; }
+            #contact .contact-container #contact-form .contact-info .email .email-icon:after {
+              content: "";
+              width: 0;
+              height: 0;
+              border-top: 20px solid transparent;
+              border-left: 20px solid #3D4955;
+              border-bottom: 20px solid transparent;
+              position: absolute;
+              top: 25%;
+              transform: translateY(-25%);
+              border-left: 18px solid #3D4955; }
+      #contact .contact-container #contact-form .message-wrap {
+        position: relative; }
+        #contact .contact-container #contact-form .message-wrap .message-input {
+          display: block;
+          width: 100%;
+          height: 220px;
+          resize: none;
+          margin-top: 20px;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 10px 15px 10px 50px;
+          font-size: 1.8rem;
+          border: 2px solid #3D4955;
+          border-radius: 3px;
+          color: #278348;
+          background-color: #F1F1F1; }
+        #contact .contact-container #contact-form .message-wrap .message-icon {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 40px;
+          height: 40px;
+          background-color: #3D4955;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+          height: 220px; }
+          #contact .contact-container #contact-form .message-wrap .message-icon:before {
+            content: "";
+            font-family: "FontAwesome";
+            font-style: normal;
+            font-size: 1.6rem;
+            color: #fff;
+            position: relative;
+            top: 25%;
+            top: 6%; }
+          #contact .contact-container #contact-form .message-wrap .message-icon:after {
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: 20px solid transparent;
+            border-left: 20px solid #3D4955;
+            border-bottom: 20px solid transparent;
+            position: absolute;
+            top: 25%;
+            transform: translateY(-25%);
+            top: 6%; }
+      #contact .contact-container #contact-form .submit-button input[type="submit"] {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        margin: 20px auto;
+        background-color: #49BF73;
+        color: #fff;
+        border: 2px solid #49BF73;
+        border-radius: 3px;
+        font-size: 1.4rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out; }
+        #contact .contact-container #contact-form .submit-button input[type="submit"]:hover {
+          background-color: #26A352;
+          border: 2px solid #26A352; }
+
+footer {
+  width: 100%;
+  background-color: #3D4955; }
+  footer .footer-wrap {
+    width: 70%;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    align-items: center; }
+    footer .footer-wrap .footer-content-wrap {
+      width: 100%; }
+      footer .footer-wrap .footer-content-wrap .copyright {
+        float: left;
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 55px; }
+        footer .footer-wrap .footer-content-wrap .copyright span {
+          font-size: 1.4rem;
+          font-weight: 700; }
+      footer .footer-wrap .footer-content-wrap .social {
+        display: inline-block;
+        float: right; }
+        footer .footer-wrap .footer-content-wrap .social a {
+          margin-right: 35px; }
 
 

@@ -1,4 +1,4 @@
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1024px) {
   #main-header {
     height: 400px; }
     #main-header #navbar {
@@ -115,6 +115,80 @@
         width: 100%;
         display: inline-block; }
         #works .works-container #showcase .column-2 .logo {
-          margin-bottom: 20px; } }
+          margin-bottom: 20px; }
+
+  #about {
+    height: 350px;
+    margin-top: -40px; }
+    #about .introduction {
+      width: 60%;
+      float: right;
+      color: #fff;
+      padding-left: 30%; }
+      #about .introduction .intro-container {
+        margin-top: 8%;
+        padding-right: 10%; } }
+@media screen and (max-width: 975px) {
+  #about .introduction {
+    width: 100%;
+    margin: 0;
+    float: left;
+    color: #fff;
+    padding-left: 15%; }
+    #about .introduction .intro-container {
+      width: 90%;
+      float: left;
+      padding-top: 5%;
+      padding-right: 30%; }
+      #about .introduction .intro-container a {
+        color: #fff;
+        border: 2px solid #fff; }
+        #about .introduction .intro-container a:hover {
+          color: #3C4A57;
+          background-color: #fff; }
+
+  #contact #contact-form {
+    width: 60% !important; }
+    #contact #contact-form .contact-info .name-wrap {
+      width: 100% !important;
+      display: block;
+      float: none !important;
+      margin-bottom: 20px; }
+    #contact #contact-form .contact-info .email-wrap {
+      width: 100% !important;
+      display: block;
+      float: none !important; }
+
+  footer {
+    width: 100%;
+    background-color: #3D4955; }
+
+  .footer-wrap {
+    width: 80%;
+    justify-content: center; }
+    .footer-wrap .footer-content-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      .footer-wrap .footer-content-wrap .copyright {
+        display: block;
+        float: none;
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 55px;
+        text-align: center; }
+        .footer-wrap .footer-content-wrap .copyright span {
+          font-size: 1.4rem;
+          font-weight: 700; }
+      .footer-wrap .footer-content-wrap .social {
+        float: none !important;
+        display: flex !important;
+        justify-content: space-around;
+        margin: 20px 0; }
+        .footer-wrap .footer-content-wrap .social a {
+          margin: 0 !important;
+          display: inline-block; } }
 
 

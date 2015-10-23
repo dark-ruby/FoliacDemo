@@ -46,7 +46,7 @@ html
 					h2 UN TEMPLATE PSD SIMPLE ET GRATUIT
 					a(href="#") MES TRAVAUX
 
-		// Portfolio ------------------------------------------------
+		// Portfolio ----------------------------------------------
 		section#works
 			.works-container
 				ul.works-nav
@@ -77,8 +77,51 @@ html
 						.thumb.motion
 							img(src="includes/img/item4.jpg", alt="motion")
 							span Motion Graphics
-		div(style='clear:both;')
-		.scroller
+		
+		// About --------------------------------------------------
+		section#about
+			section.introduction
+				.intro-container
+					h1 Michel Dupont
+					h4 Web Designer / Illustrator / Auteur
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dolor suscipit doloribus quos dolores nemo? Aliquam aut voluptate dolor unde delectus quae tempora impedit perspiciatis autem, nam neque veritatis at!
+					a(href="#") CONTACT ME
+		
+		// Contact ------------------------------------------------
+		section#contact
+			.contact-container
+				h1 CONTACT ME
+				form#contact-form
+					.contact-info
+						.name-wrap
+							.name
+								input(type="text", placeholder="Votre nom").name-input.info-input
+								.user-icon
+						.email-wrap
+							.email
+								input(type="email", placeholder="Votre email").email-input.info-input
+								.email-icon
+						.clear
+						.message-wrap
+							textarea(name="message", cols="30", rows="10", wrap="soft", placeholder="Votre message").message-input
+							.message-icon
+						.submit-button
+							input(type="submit", value="ENVOYER").submit-message
+
+		// Footer -------------------------------------------------
+		footer
+			.footer-wrap
+				.footer-content-wrap
+					p.copyright Copyright © 2015 by beneggen - <span>www.beneggen.fr</span>
+					.social
+						a(href="#")
+							img(src="includes/img/twitter.png", alt="twitter")
+						a(href="#")
+							img(src="includes/img/linkedin.png", alt="linkedin")
+						a(href="#")
+							img(src="includes/img/dribbble.png", alt="dribbble")
+						a(href="#")
+							img(src="includes/img/behance.png", alt="behance")
 
 		// jQuery Google CDN
 		script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
